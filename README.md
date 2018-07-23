@@ -1,4 +1,4 @@
-# Boilerplate for an absolute minimum setup of a React project with webpack only
+# Boilerplate for an absolute minimum setup of a React project with only webpack
 
 ## To launch in local machine
 
