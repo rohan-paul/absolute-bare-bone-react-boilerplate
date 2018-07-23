@@ -903,8 +903,8 @@ var HelloMessage = function (_React$Component) {
   return HelloMessage;
 }(_react2.default.Component);
 
-var mountNode = document.getElementById("app");
-_reactDom2.default.render(_react2.default.createElement(HelloMessage, { name: "Muthu" }), mountNode);
+var mountNode = document.getElementById("root");
+_reactDom2.default.render(_react2.default.createElement(HelloMessage, { name: "Rohan, welcome to the developers world" }), document.getElementById("root"));
 
 /***/ }),
 /* 13 */

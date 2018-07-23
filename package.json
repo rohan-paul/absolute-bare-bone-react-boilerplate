@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dist": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "webpack"    
   },
   "author": "Rohan",
   "license": "ISC",
