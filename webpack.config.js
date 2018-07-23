@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+
 const config = {
     entry: './src/App.js',
     output: {
@@ -14,13 +15,57 @@ const config = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: [                            
+                        presets: [
                             'react',
-                            'es2015'                            
+                            'es2015'
                         ],
                     },
                 },
-            }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                ],
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
+            {
+                test: /\.pcss$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                        },
+                    },
+                    'postcss-loader',
+                ],
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader: 'url-loader',
+                query: {
+                    name: '[name].[hash].[ext]',
+                    outputPath: 'images/'
+                },
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader',
+                query: {
+                    name: '[name].[hash].[ext]',
+                    outputPath: 'fonts/',
+                },
+            },
         ]
     }
 };
