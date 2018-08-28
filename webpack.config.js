@@ -6,7 +6,7 @@ const config = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
-    },
+    },		
     module: {
         rules: [
             {
@@ -69,4 +69,5 @@ const config = {
         ]
     }
 };
+
 module.exports = config;

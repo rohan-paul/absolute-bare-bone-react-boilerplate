@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dist": "webpack"
+    "dist": "webpack"		
   },
   "author": "Rohan",
   "license": "ISC",
